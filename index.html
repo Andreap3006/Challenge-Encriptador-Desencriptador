@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/imagenes/icono.jpg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&family=Roboto:ital,wght@1,500;1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/58ed9529f3.js" crossorigin="anonymous"></script>
+    <title>Encriptador/Desencriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/imagenes/Vector.png" alt="logoAlura">
+    </header>
+
+    <main>
+        <section id="contenedorPrincipal">
+            <textarea class="textoEntrada" cols="30" rows="10" placeholder="Ingrese el texto aqui"></textarea>
+            <div>
+                <h6 class="informacion">🛈 Sólo letras minúsculas y sin acento</h6>    
+            </div>
+            <div class="botones">
+                <button class="btnEncriptar" type="submit" onclick="btnEncriptar()">Encriptar</button>
+                <button class="btnDesencriptar" type="submit" onclick="btnDesncriptar()">Desencriptar</button>
+            </div>
+        </section>
+        
+        <section class="rectangulo2">
+            <textarea class="textoSalida" cols="20" rows="10" readonly></textarea>
+            <div class="mensajeAlerta">
+                <p class="alerta1 msj1">Ningún mensaje fue encontrado</p>
+                <p class="alerta2">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div>
+                <button class="btnCopiar" onclick="copiar()">Copiar</button>
+            </div>
+        </section>
+    </main>
+
+    <!--Footer-->
+    <footer id="footer">
+        <div class="textoFooter">
+            <p class="textoCreador">&copy;Andrea Perugini 2023</p>
+        </div>
+       
+        <div class="redes">
+            <a href="https://github.com/Andreap3006" target="_blank"><i class="fa-brands fa-github linkedin icon-footer"></i></a>
+   
+            <a href="https://www.linkedin.com/in/andrea-perugini-ruiz-542890209" target="_blank">
+                <i class="fa-brands fa-linkedin linkedin icon-footer"></i></a>
+   
+            <a href="mailto:andrea.p24868@gmail.com" target="_blank"><i class="fa-sharp fa-solid fa-envelope linkedin icon-footer"></i></a>
+        </div>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
